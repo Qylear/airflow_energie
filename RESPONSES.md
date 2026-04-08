@@ -43,3 +43,22 @@ timezone=Europe/Paris est essentiel car le réseau électrique français fonctio
 
 2026-03-29 01:00 UTC → 02:00 Paris
 2026-03-29 02:00 UTC → 03:00 Paris
+
+
+<img width="769" height="557" alt="image" src="https://github.com/user-attachments/assets/e53694d6-6aa0-4d1c-a51f-8df2c8b39f75" />
+
+
+[2026-04-08T11:54:36.759+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: energie_meteo_dag.generer_rapport_energie manual__2026-04-08T11:54:30.385966+00:00 [queued]>
+[2026-04-08T11:54:36.766+0000] {taskinstance.py:1957} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: energie_meteo_dag.generer_rapport_energie manual__2026-04-08T11:54:30.385966+00:00 [queued]>
+[2026-04-08T11:54:36.766+0000] {taskinstance.py:2171} INFO - Starting attempt 1 of 3
+[2026-04-08T11:54:36.776+0000] {taskinstance.py:2192} INFO - Executing <Task(PythonOperator): generer_rapport_energie> on 2026-04-08 11:54:30.385966+00:00
+[2026-04-08T11:54:36.781+0000] {standard_task_runner.py:60} INFO - Started process 179 to run task
+[2026-04-08T11:54:36.784+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'energie_meteo_dag', 'generer_rapport_energie', 'manual__2026-04-08T11:54:30.385966+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/energie_meteo_dag.py', '--cfg-path', '/tmp/tmp3dm3ty42']
+[2026-04-08T11:54:36.786+0000] {standard_task_runner.py:88} INFO - Job 12: Subtask generer_rapport_energie
+[2026-04-08T11:54:36.823+0000] {task_command.py:423} INFO - Running <TaskInstance: energie_meteo_dag.generer_rapport_energie manual__2026-04-08T11:54:30.385966+00:00 [running]> on host 6751d479324b
+[2026-04-08T11:54:36.881+0000] {taskinstance.py:2481} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='rte-data-team' AIRFLOW_CTX_DAG_ID='energie_meteo_dag' AIRFLOW_CTX_TASK_ID='generer_rapport_energie' AIRFLOW_CTX_EXECUTION_DATE='2026-04-08T11:54:30.385966+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-04-08T11:54:30.385966+00:00'
+[2026-04-08T11:54:36.883+0000] {python.py:201} INFO - Done. Returned value was: None
+[2026-04-08T11:54:36.891+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=energie_meteo_dag, task_id=generer_rapport_energie, execution_date=20260408T115430, start_date=20260408T115436, end_date=20260408T115436
+[2026-04-08T11:54:36.917+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-04-08T11:54:36.951+0000] {taskinstance.py:3281} INFO - 0 downstream tasks scheduled from follow-on schedule check
+
